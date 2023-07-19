@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+    height: 90%;
+    width: 100%;
+}
+        table,td,th,tr{ 
+    padding: 14px;
+    margin: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    align-items: center;
+    border: none;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Status</th>
+                <th>Projects</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hritik</td>
+                <td>JavaScript</td>
+                <td>Ongoing</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Hritik</td>
+                <td>JavaScript</td>
+                <td>Ongoing</td>
+                <td>5</td>
+            </tr>   
+        </tbody>
+    </table>
+    <p id="myParagraph">Click me!</p>
+
+    <script> const myParagraph = document.getElementById('myParagraph');
+        const mediaQuery = window.matchMedia('(max-width: 890px)');
+        
+        function handleClick() {
+          console.log('The paragraph was clicked!');
+        }
+        
+        function addClickListener() {
+          myParagraph.addEventListener('click', handleClick);
+        }
+        
+        function removeClickListener() {
+          myParagraph.removeEventListener('click', handleClick);
+        }
+        
+        function handleMediaQuery(e) {
+          if (e.matches) {
+            addClickListener();
+          } else {
+            removeClickListener();
+          }
+        }
+        
+        mediaQuery.addListener(handleMediaQuery);
+        handleMediaQuery(mediaQuery);</script>
+</body>
+</html>
