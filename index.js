@@ -16,11 +16,11 @@ let MenuToggle = document.querySelector(".material-symbols-outlined")
 
 
 function Menu(){
-    if(ItemBar.style.display === "none"){
-    ItemBar.style.display = "block"
+    if(ItemBar.style.left === '-105px'){
+    ItemBar.style.left = '0';
     }
     else{
-        ItemBar.style.display = "none"
+        ItemBar.style.left = '-105px';
     }
     console.log("clicked")
 }

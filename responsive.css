@@ -147,6 +147,9 @@
 }
 
 @media screen and (max-width: 700px){
+    body{
+        overflow: hidden;
+    }
     .material-symbols-outlined{
         display: block;
     }
@@ -157,11 +160,16 @@
         font-size: 24px;
     }
     .itemsBar{
-        display: none;
-        transition: all 0.3s ease-in;
         z-index: 1;
         opacity: 0.9;
         top: 5px;
+        width: 85px;
+        left: -105px;
+        transition: left 0.3s ease-in;
+    }
+    .reminders{
+        left: 55px;
+        top: 115px;
     }
     .allContent{
         position: relative;
@@ -173,11 +181,17 @@
         top: 46px;
         left: 130px;
     }
+    main .monthly-summary{
+        gap: 20px;
+        height: 200px;
+        right: 70px;
+    }
     .orders{
-        top: 290px;
-        left: 130px;
+        top: 320px;
+        left: 80px;;
     }
     .recent-orders{
-        left: 130px;
+        left: 80px;
+        top: 570px;
     }
 }

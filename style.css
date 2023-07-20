@@ -79,6 +79,8 @@ header {
 }
 
 .dark-mode {
+    width: 20px;
+    height: 20px;
     top: 25px;
     padding: 3px;
     position: relative;
