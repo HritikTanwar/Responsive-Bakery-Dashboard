@@ -11,8 +11,19 @@ let ToggleReminder = document.getElementById("toggle")
 let Reminders = document.querySelector(".reminders")
 let ShowHome = document.querySelector(".second")
 const mediaQuery = window.matchMedia('(max-width: 890px)');
+let ItemBar = document.querySelector(".itemsBar")
+let MenuToggle = document.querySelector(".material-symbols-outlined")
 
 
+function Menu(){
+    if(ItemBar.style.display === "none"){
+    ItemBar.style.display = "block"
+    }
+    else{
+        ItemBar.style.display = "none"
+    }
+    console.log("clicked")
+}
 
 ToggleReminder.addEventListener("click", function(){
     AllContent.style.display = "none"

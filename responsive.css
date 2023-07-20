@@ -121,6 +121,7 @@
     #add-reminder{
         left: 35px;
     }
+    
     .itemsBar{
         border-radius: 18px;
         width: 85px;
@@ -143,4 +144,40 @@
    .allContent{
     display: block;
    }
+}
+
+@media screen and (max-width: 700px){
+    .material-symbols-outlined{
+        display: block;
+    }
+    header{
+        width: 45%;
+    }
+    .heading .companyName {
+        font-size: 24px;
+    }
+    .itemsBar{
+        display: none;
+        transition: all 0.3s ease-in;
+        z-index: 1;
+        opacity: 0.9;
+        top: 5px;
+    }
+    .allContent{
+        position: relative;
+        right: 60px;
+        bottom: 50px;
+        z-index: -1;
+    }
+    main{
+        top: 46px;
+        left: 130px;
+    }
+    .orders{
+        top: 290px;
+        left: 130px;
+    }
+    .recent-orders{
+        left: 130px;
+    }
 }

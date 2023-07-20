@@ -107,7 +107,9 @@ aside {
     width: 210px;
     height: 660px;
 }
-
+.material-symbols-outlined{
+    display: block;
+}
 .itemsBar {
     width: 150px;
     height: 660px;
