@@ -11,19 +11,22 @@ let ToggleReminder = document.getElementById("toggle")
 let Reminders = document.querySelector(".reminders")
 let ShowHome = document.querySelector(".second")
 const mediaQuery = window.matchMedia('(max-width: 890px)');
+const mediaQueryOne = window.matchMedia('(max-width: 890px)');
 let ItemBar = document.querySelector(".itemsBar")
 let MenuToggle = document.querySelector(".material-symbols-outlined")
+
+
 
 
 function Menu(){
     if(ItemBar.style.left === '-105px'){
     ItemBar.style.left = '0';
-    }
-    else{
-        ItemBar.style.left = '-105px';
-    }
-    console.log("clicked")
+   }
+     else{
+         ItemBar.style.left = '-105px';
+     }
 }
+
 
 ToggleReminder.addEventListener("click", function(){
     AllContent.style.display = "none"
@@ -34,6 +37,7 @@ ToggleReminder.addEventListener("click", function(){
 
 ShowHome.addEventListener("click", function(){
     if(mediaQuery.matches){ 
+    MenuToggle.style.display = "block"
     AllContent.style.display = "block"
     Reminders.style.display = "none" 
     }
