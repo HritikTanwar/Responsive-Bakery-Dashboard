@@ -75,13 +75,12 @@ header {
     display: flex;
     position: relative;
     left: 200px;
-
 }
 
 .dark-mode {
     width: 20px;
     height: 20px;
-    top: 25px;
+    top: 35px;
     padding: 3px;
     position: relative;
     left: 40px;
@@ -109,8 +108,8 @@ aside {
     width: 210px;
     height: 660px;
 }
-.material-symbols-outlined{
-    display: none;
+.clicking{   
+     display: none;
 }
 .itemsBar {
     width: 150px;

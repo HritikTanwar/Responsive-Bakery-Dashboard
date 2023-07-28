@@ -12,7 +12,7 @@ let Reminders = document.querySelector(".reminders")
 let ShowHome = document.querySelector(".second")
 const mediaQuery = window.matchMedia('(max-width: 890px)');
 let ItemBar = document.querySelector(".itemsBar")
-let MenuToggle = document.querySelector(".material-symbols-outlined")
+let MenuToggle = document.querySelector(".clicking")
 
 
 
